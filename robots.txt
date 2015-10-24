@@ -1,0 +1,4 @@
+Sitemap: https://dppereyra.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: dppereyra.github.io
