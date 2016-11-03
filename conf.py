@@ -175,11 +175,13 @@ THEME_COLOR = '#5670d4'
 #
 
 POSTS = (
+    ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
+    ("pages/*.md", "pages", "story.tmpl"),
     ("pages/*.rst", "pages", "story.tmpl"),
     ("pages/*.txt", "pages", "story.tmpl"),
     ("pages/*.html", "pages", "story.tmpl"),
@@ -200,7 +202,7 @@ TIMEZONE = "Asia/Manila"
 # If you want to use ISO 8601 (also valid RFC 3339) throughout Nikola
 # (especially in new_post), set this to True.
 # Note that this does not affect DATE_FORMAT.
-# FORCE_ISO8601 = False
+FORCE_ISO8601 = True
 
 # Date format used to display post dates. (translatable)
 # (str used by datetime.datetime.strftime)
@@ -217,7 +219,7 @@ TIMEZONE = "Asia/Manila"
 # 2 = using a string like “2 days ago”
 #
 # Your theme must support it, bootstrap and bootstrap3 already do.
-# DATE_FANCINESS = 0
+DATE_FANCINESS = 2
 
 # While Nikola can select a sensible locale for each language,
 # sometimes explicit control can come handy.
@@ -231,8 +233,8 @@ TIMEZONE = "Asia/Manila"
 # not set the default Nikola mapping is used.
 
 # LOCALES = {}
-# LOCALE_FALLBACK = None
-# LOCALE_DEFAULT = None
+LOCALE_FALLBACK = "en_US.utf8"
+LOCALE_DEFAULT = "en_PH.utf8"
 
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of {source: relative destination}.
