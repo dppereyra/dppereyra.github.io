@@ -134,6 +134,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        ("/pages/about-me/index.html", "About Me"),
         ("/archive.html", "Archive"),
         ("/categories/", "Tags"),
         ("/rss.xml", "RSS feed"),
@@ -233,8 +234,8 @@ DATE_FANCINESS = 2
 # not set the default Nikola mapping is used.
 
 # LOCALES = {}
-LOCALE_FALLBACK = "en_US.utf8"
-LOCALE_DEFAULT = "en_PH.utf8"
+# LOCALE_FALLBACK = "en_US.utf8"
+# LOCALE_DEFAULT = "en_PH.utf8"
 
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of {source: relative destination}.
