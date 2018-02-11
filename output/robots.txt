@@ -1,4 +1,0 @@
-Sitemap: https://personal.datachiff.com/sitemapindex.xml
-
-User-Agent: *
-Host: personal.datachiff.com
